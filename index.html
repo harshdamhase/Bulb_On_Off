@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,27 @@
     <title>Bulb On Off</title>
 </head>
 <style>
+    #container {
+       padding: 10px;
+        width: 600px;
+        background-color: rgb(247, 177, 98);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: black;
+    }
 
-    #container{
-height: 500px;
-width: 600px;
-background-color: rgb(247, 177, 98);
-display: block;
-margin-left: auto;
-margin-right: auto;
-border-radius: 20px;
-border-style: solid;
-border-color: black;
+    .img {
+        height: 450px;
+        width: 450px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .img
-    {
-      height: 450px;
-      width: 450px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    #btn1{
+
+    #btn1 {
         height: 40px;
         width: 100px;
         background-color: green;
@@ -36,38 +37,45 @@ border-color: black;
         padding: 0%;
         color: black;
         cursor: pointer;
+        display: block;
+        margin: 0 auto;
     }
-    #btn2
-    {
+
+    #btn2 {
         height: 40px;
         width: 100px;
         background-color: red;
         margin-left: auto;
         color: black;
         cursor: pointer;
-
+        display: block;
+        margin: 0 auto;
     }
-    #text{
+
+    #text {
         font-weight: 200;
         text-shadow: 0cqi;
     }
 </style>
+
 <body>
-    <h2 id="text" ><center>Bulb On Off mini Project</center></h2>
+    <h2 id="text">
+        <center>Bulb On Off mini Project</center>
+    </h2>
     <div id="container">
         <img src="BulbOn.png" alt="image" class="img" id="bulb">
-        <button onclick="changeEvent(1)" id="btn1">On</button>
+        <button onclick="changeEvent(1)" id="btn1">On</button><br/>
         <button onclick="changeEvent(0)" id="btn2">Off</button>
     </div>
     <script>
-        const imgEle=document.getElementById("bulb")
-        function changeEvent(num)
-        {
-            if(num == 1)
-             imgEle.src = "./BulbOn.png"
-             else
-             imgEle.src="./BulbOf.png" 
+        const imgEle = document.getElementById("bulb")
+        function changeEvent(num) {
+            if (num == 1)
+                imgEle.src = "./BulbOn.png"
+            else
+                imgEle.src = "./BulbOf.png"
         }
     </script>
 </body>
+
 </html>
